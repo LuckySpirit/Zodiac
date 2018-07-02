@@ -33,6 +33,7 @@
             <input type="radio">
         </div>
     </div>
+</header>
     <section class="features">
         <h2>Почему мы</h2>
         <ul>
@@ -126,12 +127,18 @@
             </li>
         </ul>
     </section>
-    <section>
-        <form>
-
+    <section class="feedback">
+        <h2>Связаться с нами</h2>
+        <form method="post" action="send.php">
+            <input type="text" name="name" value="Ваше имя" required="required">
+            <p>Оставьте свою заявку и мы свяжемся с вами в самое ближайшее время!</p>
+            <input type="tel" name="phone" value="Номер телефона" required="required"><br>
+            <input type="text" name="email" value="Электронная почта" required="required"><br>
+            <textarea name="comment" cols="50" rows="7">Комментарий</textarea><br>
+            <input type="submit" name="send" value="Отправить">
         </form>
     </section>
+    <footer></footer>
 
-</header>
 </body>
 </html>
