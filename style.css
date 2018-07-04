@@ -12,11 +12,15 @@ header, footer {
     background-color: #363636;
     color: #c3c3c3;
 }
+.logo {
+    float: left;
+}
 .main_nav {
-    list-style: none;
+    list-style: none
 }
 .main_nav li {
     text-transform: uppercase;
+    display: inline;
 }
 .main_nav a {
     color: #FFFFFF;
@@ -34,9 +38,9 @@ button {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 150px;
-    font-family: Bahnschrift;
+    font-family: "Bahnschrift";
     background-color: transparent;
-    border: 0px;
+    border: 0;
     vertical-align: middle;
 }
 
@@ -56,4 +60,23 @@ button:active {
 }
 .slider_control li{
     display: inline;
+}
+.features ul {
+    list-style: none;
+}
+.feature-item {
+    border-left: 1px solid #d9d9d9;
+    text-align: center;
+}
+.feature-item:first-child {
+    border: none;
+}
+dd {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+dt {
+    font-size: 20px;
+    font-weight: bold;
 }
