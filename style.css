@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Arial", sans-serif;
+    color: #404040;
+    background-color: white;
+}
+header, footer {
+    padding: 10px;
+    background-color: #363636;
+    color: #c3c3c3;
+}
+.logo {
+    float: left;
+}
+.main_nav {
+    list-style: none
+}
+.main_nav li {
+    text-transform: uppercase;
+    display: inline;
+}
+.main_nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.main_nav a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.main_nav a:active {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: underline;
+}
+button {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 150px;
+    font-family: "Bahnschrift";
+    background-color: transparent;
+    border: 0;
+    vertical-align: middle;
+}
+
+button:hover {
+    color: #555555;
+}
+
+button:active {
+    color: rgba(141, 116, 90, 0.3);
+}
+.preview {
+    vertical-align: middle;
+}
+.slider_control {
+    list-style: none;
+    display: inline;
+}
+.slider_control li{
+    display: inline;
+}
+.features ul {
+    list-style: none;
+}
+.feature-item {
+    border-left: 1px solid #d9d9d9;
+    text-align: center;
+}
+.feature-item:first-child {
+    border: none;
+}
+dd {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+dt {
+    font-size: 20px;
+    font-weight: bold;
+}
