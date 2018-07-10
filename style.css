@@ -6,17 +6,38 @@ body {
     font-family: "Arial", sans-serif;
     color: #404040;
     background-color: white;
+    width: 100%;
 }
 header, footer {
     padding: 10px;
     background-color: #363636;
     color: #c3c3c3;
 }
-.logo {
-    float: left;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-theme {
+    order: 1;
+}
+.maintheme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review {
+    order: 2;
+    align-items: center;
 }
 .main_nav {
-    list-style: none
+    list-style: none;
+    justify-content: space-between;
 }
 .main_nav li {
     text-transform: uppercase;
@@ -56,10 +77,8 @@ button:active {
 }
 .slider_control {
     list-style: none;
-    display: inline;
-}
-.slider_control li{
-    display: inline;
+    display: flex;
+    justify-content: center;
 }
 .features ul {
     list-style: none;
@@ -86,6 +105,7 @@ dt {
 
 .feedback-form-group {
     padding: 10px 0;
+    margin: 10px;
 }
 
 .feedback-form-group label {
