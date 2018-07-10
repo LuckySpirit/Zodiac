@@ -83,8 +83,21 @@ button:active {
     justify-content: center;
     padding: 0;
 }
+.features {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    }
 .features ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.features li {
+    width: 400px;
+    justify-content: space-around;
 }
 .feature-item {
     border-left: 1px solid #d9d9d9;
