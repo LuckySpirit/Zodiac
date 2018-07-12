@@ -3,23 +3,10 @@
 <head>
     <title>Zodiac Studio</title>
     <meta charset="utf-8">
-    <script src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
-                var form_data = $(this).serialize(); //собераем все данные из формы
-                $.ajax({
-                    type: "POST", //Метод отправки
-                    url: "send.php", //путь до php фаила отправителя
-                    data: form_data,
-                    success: function() {
-                        //код в этом блоке выполняется при успешной отправке сообщения
-                        alert("Ваше сообщение отпрвлено!");
-                    };
-            });
-        });
-    </script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
 </head>
 <body>
 <header>
@@ -39,18 +26,13 @@
             <h2>Добро пожаловать в</h2>
             <img src="#" alt="ZODIAK" width="100px" height="30px">
         </div>
-        <div class="slider">
-            <button class="leftarrow"> <</button>
-            <img src="img/Rectangle 3.png" width="450" height="250" class="preview">
-            <button class="rightarrow"> ></button><br>
-            <ul class="slider_control">
-                <li><input type="radio" name="scroll" id="1"></li>
-                <li><input type="radio" name="scroll" id="2"></li>
-                <li><input type="radio" name="scroll" id="3"></li>
-                <li><input type="radio" name="scroll" id="4"></li>
-                <li><input type="radio" name="scroll" id="5"></li>
-            </ul>
-        </div>
+             <div class="single-slide">
+                <div><img src="img/phone.jpg" width="450" height="250"></div>
+                <div><img src="img/portfolio%20macro.jpg" width="450" height="250"></div>
+                <div><img src="img/кредит%20авто.jpg" width="450" height="250"></div>
+                <div><img src="img/окрошка.jpg" width="450" height="250"></div>
+                <div><img src="img/heitzer%20preview.jpg" width="450" height="250"></div>
+             </div>
     </div>
 </header>
     <section class="features">
@@ -158,6 +140,14 @@
         </form>
     </section>
     <footer></footer>
-
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.single-slide').slick({
+    });
+    });
+    dots: true
+</script>
 </body>
 </html>
