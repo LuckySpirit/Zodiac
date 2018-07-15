@@ -58,7 +58,7 @@ button {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 150px;
-    font-family: "Bahnschrift";
+    font-family: "Bahnschrift", sans-serif;
     background-color: transparent;
     border: 0;
     vertical-align: middle;
@@ -71,15 +71,7 @@ button:hover {
 button:active {
     color: rgba(141, 116, 90, 0.3);
 }
-.preview {
-    vertical-align: middle;
-}
-.slider_control {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
+
 .features {
     width: 100%;
     display: flex;
@@ -91,17 +83,13 @@ button:active {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    flex-basis: max-content;
+    justify-content: center;
+
 }
 .features li {
     width: 400px;
-    justify-content: space-around;
-}
-.feature-item {
-    border-left: 1px solid #d9d9d9;
-    text-align: center;
-}
-.feature-item:first-child {
-    border: none;
+    margin: 30px 20px 30px auto;
 }
 dd {
     font-size: 16px;
